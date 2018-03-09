@@ -1,0 +1,30 @@
+{
+  "name": "nicolas-benedit",
+  "version": "1.0.0",
+  "description": "website for Nicolas Benedit",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jeromecoupe/nicolasbenedit.git"
+  },
+  "author": "Jérôme Coupé",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jeromecoupe/nicolasbenedit/issues"
+  },
+  "homepage": "https://github.com/jeromecoupe/nicolasbenedit#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

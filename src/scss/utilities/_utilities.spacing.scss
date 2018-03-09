@@ -1,0 +1,67 @@
+// ===================================
+// settings
+// ===================================
+
+$spacing-map: (
+  "none": 0,
+  "xs": 4px,
+  "s": 8px,
+  "base": 16px,
+  "l": 24px,
+  "xl": 32px
+) !default;
+
+$breakpoints-map: (
+  "large": (query: "all and (min-width: 1024px)", generate-rwd-classes: true),
+  "medium": (query: "all and (min-width: 760px)", generate-rwd-classes: true),
+  "small": (query: "all and (min-width: 500px)", generate-rwd-classes: true)
+);
+
+// ===================================
+// margins
+// ===================================
+
+// base classes
+@each $size-name, $size-value in $spacing-map {
+  .u-margin-top {
+    margin-top: pxtorems($size-value) !important;
+  }
+  .u-margin-right {
+    margin-right: pxtorems($size-value) !important;
+  }
+  .u-margin-bottom {
+    margin-bottom: pxtorems($size-value) !important;
+  }
+  .u-margin-left {
+    margin-left: pxtorems($size-value) !important;
+  }
+}
+
+// RWD classes
+@each $breakpoint-name, $breakpoint-params in $breakpoints-map {
+  // get parameters
+  $classes: map-get($breakpoint-params, generate-rwd-classes);
+  $query: map-get($breakpoint-params, query);
+
+  // check if needs generation
+  @if ($classes == true) {
+    // write media query
+    @media #{$query} {
+      // write classes
+      @each $size-name, $size-value in $spacing-map {
+        .u-margin-top {
+          margin-top: pxtorems($size-value) !important;
+        }
+        .u-margin-right {
+          margin-right: pxtorems($size-value) !important;
+        }
+        .u-margin-bottom {
+          margin-bottom: pxtorems($size-value) !important;
+        }
+        .u-margin-left {
+          margin-left: pxtorems($size-value) !important;
+        }
+      }
+    }
+  }
+}

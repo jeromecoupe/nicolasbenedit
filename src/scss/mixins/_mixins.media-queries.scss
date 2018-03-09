@@ -1,0 +1,31 @@
+// ===================================
+// Settings
+// ===================================
+
+$breakpoints-map: (
+  "large": (query: "all and (min-width: 1024px)", generate-rwd-classes: true),
+  "medium": (query: "all and (min-width: 760px)", generate-rwd-classes: true),
+  "small": (query: "all and (min-width: 500px)", generate-rwd-classes: true)
+) !default;
+
+// ===================================
+// Media queries
+// ===================================
+
+@mixin mq($breakpoint) {
+  $breakpoint: unquote($breakpoint);
+  // check is passed breakpoint name is a key
+  @if (map-has-key($breakpoints-map, $breakpoint)) {
+    //get params and query
+    $breakpoint-params: map-get($breakpoints-map, $breakpoint);
+    $breakpoint-query: map-get($breakpoint-params, query);
+
+    //write CSS media query
+    @media #{$breakpoint-query} {
+      @content;
+    }
+  } @else {
+    // throw error message
+    @error ("#{$breakpoint} is not a valid breakpoint name in $breakpoints-map");
+  }
+}

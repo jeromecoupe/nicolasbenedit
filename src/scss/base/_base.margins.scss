@@ -1,0 +1,26 @@
+// ===================================
+// Unidirectional margins
+// ===================================
+
+/**
+ * https://csswizardry.com/2012/06/single-direction-margin-declarations/
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+form,
+fieldset,
+hr {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}

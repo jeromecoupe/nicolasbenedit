@@ -1,0 +1,9 @@
+// ===================================
+// Breakpoints
+// ===================================
+
+$breakpoints-map: (
+  "large": (query: "all and (min-width: 1024px)", generate-rwd-classes: true),
+  "medium": (query: "all and (min-width: 760px)", generate-rwd-classes: true),
+  "small": (query: "all and (min-width: 500px)", generate-rwd-classes: true)
+);

@@ -1,0 +1,5 @@
+<svg class="c-icon" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>LinkedIn</title>
+  <desc>LinkedIn icon</desc>
+  <path d="M24 48C10.745 48 0 37.255 0 24S10.745 0 24 0s24 10.745 24 24-10.745 24-24 24zm-5.727-32.364a1.637 1.637 0 1 0-3.273 0 1.637 1.637 0 0 0 3.273 0zm0 3.273H15V32h3.273V18.91zm6.832.391h-3.56V32h3.56v-6.666c0-3.707 4.32-4.01 4.32 0V32H33v-8.041c0-6.255-6.393-6.027-7.895-2.948V19.3z" fill="currentColor" fill-rule="evenodd"/>
+</svg>

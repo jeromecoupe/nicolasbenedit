@@ -1,0 +1,18 @@
+// ===================================
+// Content sections
+// ===================================
+
+.l-contentsection {
+  padding-top: pxtorems(80px);
+  padding-bottom: pxtorems(80px);
+
+  @include mq(medium) {
+    padding-top: pxtorems(120px);
+    padding-bottom: pxtorems(120px);
+  }
+}
+
+.l-contentsection--dark {
+  background-color: $color-grey1;
+  color: $color-grey6;
+}

@@ -1,0 +1,28 @@
+// ===================================
+// titles
+// ===================================
+
+.c-h1 {
+  font-weight: 300;
+  font-size: pxtorems(48px);
+  line-height: (60/48);
+  font-family: $fontstack-main;
+}
+
+.c-sectiontitle {
+  margin-bottom: pxtorems(12px);
+
+  font-weight: 600;
+  font-size: pxtorems(12px);
+  line-height: 1;
+  font-family: $fontstack-main;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+
+  & > span {
+    display: inline-block;
+    padding: pxtorems(12px) pxtorems(18px);
+    background-color: $color-grey1;
+  }
+}
