@@ -3,8 +3,13 @@
 // ===================================
 
 .c-siteheader {
-  padding-top: pxtorems(120px);
-  padding-bottom: pxtorems(120px);
+  padding-top: pxtorems(60px);
+  padding-bottom: pxtorems(60px);
+
+  @include mq(large) {
+    padding-top: pxtorems(120px);
+    padding-bottom: pxtorems(120px);
+  }
 }
 
 .c-siteheader > .l-container {

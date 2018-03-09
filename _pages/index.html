@@ -3,44 +3,31 @@ layout: default
 permalink: index.html
 ---
 
-<header class="c-siteheader">
-  <div class="l-container">
-
-    <div class="c-siteheader__brand">
-      <h1 class="c-sectiontitle"><span>Nicolas Benedit</span></h1>
-      <h2 class="c-h1">Architecture &amp; Design</h2>
-    </div>
-
-    <div class="c-siteheader__links">
-      <ul class="c-socialmedia">
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_facebook.svg %}</a></li>
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_linkedin.svg %}</a></li>
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_instagram.svg %}</a></li>
-      </ul>
-    </div>
-
-  </div>
-</header>
-
 <main>
-  <div class="l-contentsection  l-contentsection--dark">
+  <div class="l-contentsection  l-contentsection--dark  l-contentsection--nico">
     <div class="l-container">
 
-      <h3>Meet the designer</h3>
-      <blockquote>
-        <p>As a fan of big hardware stores, my great challenge is to <strong>create</strong> original products <strong>from existing</strong> industrial <strong>parts</strong>.</p>
-      </blockquote>
+      <div class="c-designer">
+        <h3 class="c-designer__title  c-h2  c-h2--inverse">Meet the designer</h3>
 
-      <h4>Nicolas Benedit</h4>
-      <p>Based in Barcelona since 2001 (Buenos Aires, Argentina 1973), Nicolás graduated in Architecture and worked in Barcelona and Buenos Aires in housing projects and in remodeling and interior design projects for commercial architecture.</p>
-      <p>Lover of the industrial design, right now is in full development of his own line of lamps.</p>
+        <blockquote class="c-designer__quote  c-bigquote">
+          <p>As a fan of big hardware stores, my great challenge is to <strong>create</strong> original <strong>products from existing</strong> industrial <strong>parts</strong>.</p>
+        </blockquote>
 
-      <ul>
-        <li>Private housing renovation</li>
-        <li>Industrial design</li>
-        <li>Interior design</li>
-        <li>Commercial architecture</li>
-      </ul>
+        <h4 class="c-designer__bio-title  c-h3  c-h3--inverse">Nicolas Benedit</h4>
+
+        <div class="c-designer__bio  c-text-grey">
+          <p>Based in Barcelona since 2001 (Buenos Aires, Argentina 1973), Nicolás graduated in Architecture and worked in Barcelona and Buenos Aires in housing projects and in remodeling and interior design projects for commercial architecture.</p>
+          <p>Lover of the industrial design, right now is in full development of his own line of lamps.</p>
+        </div>
+
+        <ul class="c-designer__skills  c-listv  c-listv--s  c-listv--linebullets  c-text-grey">
+          <li>Private housing renovation</li>
+          <li>Industrial design</li>
+          <li>Interior design</li>
+          <li>Commercial architecture</li>
+        </ul>
+      </div>
 
     </div>
   </div>
@@ -48,7 +35,7 @@ permalink: index.html
   <div class="l-contentsection">
     <div class="l-container">
 
-      <h3>Products</h3>
+      <h3 class="c-sectiontitle"><span>Products</span></h3>
       <p>I currently have produced my first lamp. Various other products are at the prototyping stage right now and will be released over the course of 2018.</p>
 
       <h4>Nina</h4>
@@ -73,26 +60,4 @@ permalink: index.html
 
 </main>
 
-<footer class="c-sitefooter">
-  <div class="l-container">
 
-    <div class="c-sitefooter__content">
-      <p>Get in touch, why don’t you?</p>
-      <ul>
-        <li><a href="mailto:hello@nicolasbenedit.com">hello@nicolasbenedit.com</a></li>
-        <li><a href="tel0032474340174">+32 474 340 174</a></li>
-      </ul>
-
-      <ul class="c-socialmedia  c-socialmedia--light  c-socialmedia--small">
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_facebook.svg %}</a></li>
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_linkedin.svg %}</a></li>
-        <li class="c-socialmedia__item"><a class="c-socialmedia__link" href="#">{% include svg/icon_instagram.svg %}</a></li>
-      </ul>
-    </div>
-
-    <div class="c-sitefooter__copyright">
-      <p class="margin-bottom-none">Copyright {{ 'now'| date: '%Y' }} - Nicolas Benedit - All rights reserved</p>
-    </div>
-
-  </div>
-</footer>

@@ -1,0 +1,45 @@
+// ===================================
+// lists
+// ===================================
+
+// ===================================
+// settings
+// ===================================
+
+$list-spacing-map: (
+  "xs": 6px,
+  "s": 12px,
+  "base": 18px,
+  "l": 24px,
+  "xl": 30px
+) !default;
+
+// ===================================
+// vertical lists
+// ===================================
+
+.c-listv {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// spacing variants
+@each $key, $value in $list-spacing-map {
+  .c-listv--#{$key} > li:not(:last-child) {
+    margin-bottom: #{$value};
+  }
+}
+
+// bullets variant
+.c-listv--linebullets {
+  & > li:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+}

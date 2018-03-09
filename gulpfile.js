@@ -51,7 +51,7 @@ function images() {
   return (
     gulp
       .src("./src/img/**/*")
-      //.pipe(gulpChanged("./_site/assets/img"))
+      .pipe(gulpChanged("./_site/assets/img"))
       .pipe(
         gulpImagemin([
           gulpImagemin.gifsicle({ interlaced: true }),
