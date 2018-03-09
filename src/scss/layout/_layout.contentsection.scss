@@ -3,8 +3,8 @@
 // ===================================
 
 .l-contentsection {
-  padding-top: pxtorems(80px);
-  padding-bottom: pxtorems(80px);
+  padding-top: pxtorems(60px);
+  padding-bottom: pxtorems(60px);
 
   @include mq(medium) {
     padding-top: pxtorems(120px);
@@ -15,4 +15,11 @@
 .l-contentsection--dark {
   background-color: $color-grey1;
   color: $color-grey6;
+}
+
+.l-contentsection--nico {
+  background-image: url(../img/bkg_nico.png);
+  background-repeat: no-repeat;
+  background-position: 15% 100%;
+  background-size: contain;
 }
