@@ -58,6 +58,14 @@
   color: #ffffff;
 }
 
+.c-h4 {
+  @extend %titles;
+  font-weight: 600;
+  font-size: pxtorems(16px);
+  line-height: (18/16);
+  color: $color-grey1;
+}
+
 .c-sectiontitle {
   margin-bottom: pxtorems(12px);
 
