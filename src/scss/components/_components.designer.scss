@@ -8,6 +8,7 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
     grid-column-gap: pxtorems(30px);
+    justify-items: start;
   }
 }
 

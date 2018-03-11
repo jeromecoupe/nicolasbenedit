@@ -1,0 +1,29 @@
+// ===================================
+// texts styles
+// ===================================
+
+.u-text-grey {
+  color: $color-grey3 !important;
+}
+
+.u-text-lightgrey {
+  color: $color-grey4 !important;
+}
+
+// ===================================
+// texts sizes
+// ===================================
+
+$text-sizes-map: (
+  "xs": 12px,
+  "s": 14px,
+  "base": 16px,
+  "l": 18px,
+  "xl": 24px
+);
+
+@each $key, $value in $text-sizes-map {
+  .u-text-#{$key} {
+    font-size: pxtorems($value) !important;
+  }
+}
