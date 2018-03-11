@@ -23,16 +23,16 @@ $breakpoints-map: (
 
 // base classes
 @each $size-name, $size-value in $spacing-map {
-  .u-margin-top {
+  .u-margin-top-#{$size-name} {
     margin-top: pxtorems($size-value) !important;
   }
-  .u-margin-right {
+  .u-margin-right-#{$size-name} {
     margin-right: pxtorems($size-value) !important;
   }
-  .u-margin-bottom {
+  .u-margin-bottom-#{$size-name} {
     margin-bottom: pxtorems($size-value) !important;
   }
-  .u-margin-left {
+  .u-margin-left-#{$size-name} {
     margin-left: pxtorems($size-value) !important;
   }
 }
@@ -49,16 +49,16 @@ $breakpoints-map: (
     @media #{$query} {
       // write classes
       @each $size-name, $size-value in $spacing-map {
-        .u-margin-top {
+        .u-margin-top-#{$size-name} {
           margin-top: pxtorems($size-value) !important;
         }
-        .u-margin-right {
+        .u-margin-right-#{$size-name} {
           margin-right: pxtorems($size-value) !important;
         }
-        .u-margin-bottom {
+        .u-margin-bottom-#{$size-name} {
           margin-bottom: pxtorems($size-value) !important;
         }
-        .u-margin-left {
+        .u-margin-left-#{$size-name} {
           margin-left: pxtorems($size-value) !important;
         }
       }

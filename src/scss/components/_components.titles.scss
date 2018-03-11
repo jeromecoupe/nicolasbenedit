@@ -2,27 +2,92 @@
 // titles
 // ===================================
 
-.c-h1 {
-  font-weight: 300;
-  font-size: pxtorems(48px);
-  line-height: (60/48);
+%titles {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
   font-family: $fontstack-main;
+  color: $color-grey2;
+}
+
+.c-h1 {
+  @extend %titles;
+  font-weight: 300;
+  font-size: pxtorems(40px);
+  line-height: (48/40);
+
+  @include mq(medium) {
+    font-size: pxtorems(48px);
+    line-height: (60/48);
+  }
+}
+
+.c-h2 {
+  @extend %titles;
+  font-size: pxtorems(24px);
+  line-height: (30/24);
+
+  @include mq(medium) {
+    font-size: pxtorems(30px);
+    line-height: (36/30);
+  }
+
+  @include mq(large) {
+    font-size: pxtorems(36px);
+    line-height: (42/36);
+  }
+}
+
+.c-h2--inverse {
+  color: #ffffff;
+}
+
+.c-h3 {
+  @extend %titles;
+  font-weight: 600;
+  font-size: pxtorems(18px);
+  line-height: (24/18);
+
+  @include mq(large) {
+    font-weight: 400;
+    font-size: pxtorems(24px);
+    line-height: (36/24);
+  }
+}
+
+.c-h3--inverse {
+  color: #ffffff;
+}
+
+.c-h4 {
+  @extend %titles;
+  font-weight: 600;
+  font-size: pxtorems(16px);
+  line-height: (18/16);
+  color: $color-grey1;
 }
 
 .c-sectiontitle {
   margin-bottom: pxtorems(12px);
 
   font-weight: 600;
-  font-size: pxtorems(12px);
+  font-size: pxtorems(10px);
   line-height: 1;
   font-family: $fontstack-main;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 
+  @include mq(medium) {
+    font-size: pxtorems(12px);
+  }
+
   & > span {
     display: inline-block;
-    padding: pxtorems(12px) pxtorems(18px);
+    padding: pxtorems(6px) pxtorems(12px);
     background-color: $color-grey1;
+
+    @include mq(medium) {
+      padding: pxtorems(12px) pxtorems(18px);
+    }
   }
 }

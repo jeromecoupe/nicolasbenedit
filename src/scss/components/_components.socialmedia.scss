@@ -29,21 +29,30 @@
 
 .c-socialmedia__link > svg {
   display: block;
+
+  width: pxtorems(36px);
+  height: pxtorems(36px);
+
+  @include mq(medium) {
+    width: pxtorems(42px);
+    height: pxtorems(42px);
+  }
+
+  @include mq(large) {
+    width: pxtorems(48px);
+    height: pxtorems(48px);
+  }
 }
 
-/* light color variant */
-.c-socialmedia--light {
+/* footer variant */
+.c-socialmedia--footer {
   & .c-socialmedia__link {
     color: #ffffff;
 
     &:hover {
-      color: $color-grey5;
+      color: $color-accent1;
     }
   }
-}
-
-/* small icons variant */
-.c-socialmedia--small {
   & svg {
     width: pxtorems(36px);
     height: pxtorems(36px);
