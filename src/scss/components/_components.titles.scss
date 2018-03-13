@@ -83,7 +83,7 @@
 
   & > span {
     display: inline-block;
-    padding: pxtorems(6px) pxtorems(12px);
+    padding: pxtorems(12px) pxtorems(12px);
     background-color: $color-grey1;
 
     @include mq(medium) {
