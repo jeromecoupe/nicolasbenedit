@@ -75,7 +75,7 @@
   margin: 0 0 1.5rem;
 }
 
-.c-specs__name {
+.c-specs__title {
   margin-bottom: pxtorems(3px);
   font-weight: 600;
   font-size: pxtorems(16px);
@@ -83,7 +83,7 @@
 }
 
 .c-specs__content {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   font-size: pxtorems(14px);
   color: $color-grey3;
 }
