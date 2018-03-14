@@ -1,7 +1,7 @@
 # Site settings
 title: Nicolas Benedit - Architecture and Design
 email: nicolas@benedit.com
-description: Nicolas Benedit - Architecture and Design
+description: Based in Barcelona since 2001 and born in Buenos Aires, Nicolás is an architect and an industrial design enthusiast creating is own line of lamps.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
