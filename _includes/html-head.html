@@ -3,8 +3,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600">
   <link rel="stylesheet" href="/assets/css/main.min.css?rev={{ 'now'|date: '%Y%m%d' }}">
+
+  <!-- Open graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:image" content="/assets/img/socialmedia.jpg">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
