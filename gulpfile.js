@@ -51,16 +51,7 @@ function images() {
   return gulp
     .src("./src/img/**/*")
     .pipe(gulpChanged("./_site/assets/img"))
-    .pipe(
-      gulpImagemin([
-        gulpImagemin.gifsicle({ interlaced: true }),
-        gulpImagemin.jpegtran({ progressive: true }),
-        gulpImagemin.optipng({ optimizationLevel: 5 }),
-        gulpImagemin.svgo({
-          plugins: [{ removeViewBox: false }]
-        })
-      ])
-    )
+    .pipe(gulpImagemin())
     .pipe(gulp.dest("./_site/assets/img"))
     .pipe(browserSync.stream());
 }
