@@ -7,24 +7,21 @@
   margin: 0;
   padding: 0;
 
-  height: 100vw;
-
-  @include mq(small) {
-    height: calc(100vw / 16 * 9);
-  }
-
-  @include mq(large) {
-    height: calc(100vw / 16 * 7);
-  }
-
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
 
+  height: 100vw;
+
   @include mq(small) {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
+    height: 500px;
+  }
+
+  @include mq(large) {
+    height: 600px;
   }
 }
 
