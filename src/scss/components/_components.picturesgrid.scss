@@ -13,15 +13,27 @@
   grid-gap: 20px;
 
   height: 100vw;
+  background-image: url(../img/bkggrid-small.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include mq(small) {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: auto;
     height: 500px;
+    background-image: url(../img/bkggrid-medium.png);
   }
 
   @include mq(large) {
     height: 600px;
+    background-image: url(../img/bkggrid-large.png);
+  }
+}
+
+@supports (display: grid) {
+  .c-picturesgrid {
+    background-image: none;
   }
 }
 
