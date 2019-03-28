@@ -56,9 +56,8 @@ function images() {
     .pipe(browserSync.stream());
 }
 
-gulp.task("images", images);
-gulp.task("watch", gulp.parallel(browsersync, watchFiles));
-gulp.task("build", gulp.series(clean, gulp.parallel(css, images, jekyll)));
+const watch = gulp.parallel(browsersync, watchFiles);
+const build = gulp.series(clean, gulp.parallel(css, images, jekyll));
 
 function watchFiles() {
   gulp.watch(["./src/scss/**/*.scss"], css);
@@ -68,3 +67,7 @@ function watchFiles() {
   );
   gulp.watch(["./src/img/**/*{.png,.jpg,.svg,.gif}"], images);
 }
+
+exports.build = build;
+exports.watch = watch;
+exports.default = build;
