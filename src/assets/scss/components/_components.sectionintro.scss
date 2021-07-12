@@ -7,7 +7,7 @@
   margin-bottom: calc(72 / 16 * 1rem);
   font-size: calc(18 / 16 * 1rem);
   line-height: calc(24 / 18);
-  color: $color-grey3;
+  color: var(--color-grey3);
 
   @include mq(medium) {
     font-size: calc(20 / 16 * 1rem);

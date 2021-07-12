@@ -8,12 +8,12 @@
 .c-h4 {
   margin-bottom: 1.25rem;
   font-weight: 400;
-  font-family: var(--fontstack-main);
-  color: $color-grey2;
+  font-family: var(--fontstack-alt);
+  color: var(--color-grey2);
 }
 
 .c-h1 {
-  font-weight: 300;
+  font-weight: 200;
   font-size: calc(40 / 16 * 1rem);
   line-height: calc(48 / 40);
 
@@ -62,16 +62,16 @@
   font-weight: 600;
   font-size: 1rem;
   line-height: calc(18 / 16);
-  color: $color-grey1;
+  color: var(--color-grey1);
 }
 
 .c-sectiontitle {
   margin-bottom: calc(12 / 16 * 1rem);
 
-  font-weight: 600;
+  font-weight: 700;
   font-size: calc(10 / 16 * 1rem);
   line-height: 1;
-  font-family: var(--fontstack-main);
+  font-family: var(--fontstack-alt);
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -83,7 +83,7 @@
   & > span {
     display: inline-block;
     padding: calc(12 / 16 * 1rem);
-    background-color: $color-grey1;
+    background-color: var(--color-grey1);
 
     @include mq(medium) {
       padding: calc(12 / 16 * 1rem) calc(18 / 16 * 1rem);

@@ -10,21 +10,20 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
 }
 
 .c-socialmedia__item:not(:last-child) {
-  margin-right: calc(6 / 16 * 1rem);
+  margin-right: 6px;
 }
 
 .c-socialmedia__link {
   display: block;
-  color: $color-grey1;
+  color: var(--color-grey1);
   transition: all 0.2s ease-in-out;
 }
 
 .c-socialmedia__link:hover {
-  color: $color-accent1;
+  color: var(--color-accent1);
 }
 
 .c-socialmedia__link > svg {
@@ -50,7 +49,7 @@
     color: #ffffff;
 
     &:hover {
-      color: $color-accent1;
+      color: var(--color-accent1);
     }
   }
   & svg {

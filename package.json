@@ -4,7 +4,7 @@
   "description": "website for Nicolas Benedit",
   "browserslist": [
     "last 2 versions",
-    "not IE"
+    "not IE <= 11"
   ],
   "repository": {
     "type": "git",

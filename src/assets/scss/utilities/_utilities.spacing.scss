@@ -4,11 +4,11 @@
 
 $spacing-map: (
   "none": 0,
-  "xs": 4px,
-  "s": 8px,
-  "base": 16px,
-  "l": 24px,
-  "xl": 32px,
+  "xs": 4,
+  "s": 8,
+  "base": 16,
+  "l": 24,
+  "xl": 32,
 ) !default;
 
 $breakpoints-map: (
@@ -33,16 +33,16 @@ $breakpoints-map: (
 // base classes
 @each $size-name, $size-value in $spacing-map {
   .u-margin-top-#{$size-name} {
-    margin-top: calc($size-value / 16 * 1rem) !important;
+    margin-top: calc(#{$size-value} / 16 * 1rem) !important;
   }
   .u-margin-right-#{$size-name} {
-    margin-right: calc($size-value / 16 * 1rem) !important;
+    margin-right: calc(#{$size-value} / 16 * 1rem) !important;
   }
   .u-margin-bottom-#{$size-name} {
-    margin-bottom: calc($size-value / 16 * 1rem) !important;
+    margin-bottom: calc(#{$size-value} / 16 * 1rem) !important;
   }
   .u-margin-left-#{$size-name} {
-    margin-left: calc($size-value / 16 * 1rem) !important;
+    margin-left: calc(#{$size-value} / 16 * 1rem) !important;
   }
 }
 
@@ -59,16 +59,16 @@ $breakpoints-map: (
       // write classes
       @each $size-name, $size-value in $spacing-map {
         .u-margin-top-#{$size-name} {
-          margin-top: calc($size-value / 16 * 1rem) !important;
+          margin-top: calc(#{$size-value} / 16 * 1rem) !important;
         }
         .u-margin-right-#{$size-name} {
-          margin-right: calc($size-value / 16 * 1rem) !important;
+          margin-right: calc(#{$size-value} / 16 * 1rem) !important;
         }
         .u-margin-bottom-#{$size-name} {
-          margin-bottom: calc($size-value / 16 * 1rem) !important;
+          margin-bottom: calc(#{$size-value} / 16 * 1rem) !important;
         }
         .u-margin-left-#{$size-name} {
-          margin-left: calc($size-value / 16 * 1rem) !important;
+          margin-left: calc(#{$size-value} / 16 * 1rem) !important;
         }
       }
     }

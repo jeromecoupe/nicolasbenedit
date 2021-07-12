@@ -5,18 +5,18 @@
 .c-button {
   display: inline-block;
   padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
-  border: 1px solid $color-grey1;
+  border: 1px solid var(--color-grey1);
 
   font: 600 calc(14 / 16 * 1rem) / 1 var(--fontstack-main);
   text-decoration: none;
   text-transform: uppercase;
-  color: $color-grey1;
+  color: var(--color-grey1);
 
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    border-color: $color-accent1;
-    color: $color-accent1;
+    border-color: var(--color-accent1);
+    color: var(--color-accent1);
   }
 }
 
@@ -31,7 +31,7 @@
   align-items: stretch;
   flex-wrap: nowrap;
 
-  border: 1px solid $color-grey1;
+  border: 1px solid var(--color-grey1);
 
   text-transform: uppercase;
   text-decoration: none;
@@ -39,17 +39,17 @@
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    border-color: $color-accent1;
+    border-color: var(--color-accent1);
 
     & > .c-button-buy__price {
-      background-color: $color-accent1;
-      color: $color-grey1;
+      background-color: var(--color-accent1);
+      color: var(--color-grey1);
     }
   }
 
   & > .c-button-buy__price {
     padding: calc(12 / 16 * 1rem) calc(18 / 16 * 1rem);
-    background-color: $color-grey1;
+    background-color: var(--color-grey1);
 
     font: 600 calc(14 / 16 * 1rem) / 1 var(--fontstack-main);
     color: #ffffff;
@@ -61,6 +61,6 @@
     padding: calc(12 / 16 * 1rem) calc(24 / 16 * 1rem);
 
     font: 600 calc(14 / 16 * 1rem) / 1 var(--fontstack-main);
-    color: $color-grey1;
+    color: var(--color-grey1);
   }
 }

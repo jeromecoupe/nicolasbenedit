@@ -12,7 +12,7 @@
   }
 }
 
-.c-siteheader > .l-container {
+.c-siteheader__inner {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,18 +20,16 @@
 
   @include mq(medium) {
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
   }
 }
 
 .c-siteheader__brand {
-  max-width: 448px;
-  flex: 0 1 auto;
+  max-width: 450px;
 }
 
 .c-siteheader__links {
-  flex: 0 1 auto;
-
   @include mq(medium) {
     margin-left: auto;
   }

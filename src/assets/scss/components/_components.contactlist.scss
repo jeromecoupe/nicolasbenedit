@@ -13,10 +13,10 @@
 }
 
 .c-contactlist__link {
-  color: $color-grey4;
+  color: var(--color-grey4);
   text-decoration: none;
 
   &:hover {
-    color: $color-accent1;
+    color: var(--color-accent1);
   }
 }
