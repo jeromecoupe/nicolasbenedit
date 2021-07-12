@@ -1,0 +1,74 @@
+// ===================================
+// product
+// ===================================
+
+/**
+ * Layout
+*/
+
+.c-product {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "img"
+    "txt";
+  gap: 1rem;
+
+  @include mq(medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "txt img";
+    gap: 60px;
+  }
+
+  @include mq(large) {
+    gap: 90px;
+  }
+}
+
+.c-product__content {
+  align-self: center;
+  grid-area: txt;
+}
+
+.c-product__image {
+  align-self: center;
+  grid-area: img;
+}
+
+/**
+ * Typography
+*/
+
+.c-product__title {
+  margin-bottom: calc(6 / 16 * 1rem);
+  font-weight: 400;
+  font-size: calc(36 / 16 * 1rem);
+  line-height: calc(42 / 36);
+  font-family: var(--fontstack-alt);
+  color: var(--color-grey2);
+}
+
+.c-product__subtitle {
+  font-weight: 400;
+  font-size: calc(20 / 16 * 1rem);
+  line-height: calc(24 / 20);
+  font-family: var(--fontstack-alt);
+  color: var(--color-grey4);
+}
+
+.c-specs {
+  margin: 0 0 1.5rem;
+}
+
+.c-specs__title {
+  margin-bottom: calc(3 / 16 * 1rem);
+  font-weight: 600;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-grey1);
+}
+
+.c-specs__content {
+  margin: 0 0 1rem;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-grey3);
+}

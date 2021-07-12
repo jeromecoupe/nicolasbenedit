@@ -1,11 +1,6 @@
 # mac stuff
 .DS_Store
 
-# jekyll stuff
-_site
-.sass-cache
-.jekyll-metadata
-
 # node modules
 node_modules
 

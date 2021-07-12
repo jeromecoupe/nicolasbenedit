@@ -1,0 +1,49 @@
+// ===================================
+// Content sections
+// ===================================
+
+.l-contentsection {
+  padding-top: calc(60 / 16 * 1rem);
+  padding-bottom: calc(60 / 16 * 1rem);
+
+  @include mq(medium) {
+    padding-top: calc(120 / 16 * 1rem);
+    padding-bottom: calc(120 / 16 * 1rem);
+  }
+}
+
+.l-contentsection--dark {
+  background-color: var(--color-grey1);
+  color: var(--color-grey6);
+}
+
+.l-contentsection--designer {
+  position: relative;
+
+  background-image: url(../img/bkg_nico.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: contain;
+
+  padding-bottom: calc(92 / 16 * 1rem); /* compensate :after height */
+
+  @include mq(medium) {
+    padding-bottom: calc(152 / 16 * 1rem); /* compensate :after height */
+  }
+
+  @include mq(large) {
+    background-position: calc(50% - 300px) 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - calc((100% - 1170px) / 2));
+    height: 32px;
+    background-color: #ffffff;
+  }
+}
