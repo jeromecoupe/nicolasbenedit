@@ -1,0 +1,92 @@
+// ===================================
+// titles
+// ===================================
+
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4 {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  font-family: var(--fontstack-main);
+  color: $color-grey2;
+}
+
+.c-h1 {
+  font-weight: 300;
+  font-size: calc(40 / 16 * 1rem);
+  line-height: calc(48 / 40);
+
+  @include mq(medium) {
+    font-size: calc(48 / 16 * 1rem);
+    line-height: calc(60 / 48);
+  }
+}
+
+.c-h2 {
+  font-size: calc(24 / 16 * 1rem);
+  line-height: calc(30 / 24);
+
+  @include mq(medium) {
+    font-size: calc(30 / 16 * 1rem);
+    line-height: calc(36 / 30);
+  }
+
+  @include mq(large) {
+    font-size: calc(36 / 16 * 1rem);
+    line-height: calc(42 / 36);
+  }
+}
+
+.c-h2--inverse {
+  color: #ffffff;
+}
+
+.c-h3 {
+  font-weight: 600;
+  font-size: calc(18 / 16 * 1rem);
+  line-height: calc(24 / 18);
+
+  @include mq(large) {
+    font-weight: 400;
+    font-size: calc(24 / 16 * 1rem);
+    line-height: calc(36 / 24);
+  }
+}
+
+.c-h3--inverse {
+  color: #ffffff;
+}
+
+.c-h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: calc(18 / 16);
+  color: $color-grey1;
+}
+
+.c-sectiontitle {
+  margin-bottom: calc(12 / 16 * 1rem);
+
+  font-weight: 600;
+  font-size: calc(10 / 16 * 1rem);
+  line-height: 1;
+  font-family: var(--fontstack-main);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+
+  @include mq(medium) {
+    font-size: calc(12 / 16 * 1rem);
+  }
+
+  & > span {
+    display: inline-block;
+    padding: calc(12 / 16 * 1rem);
+    background-color: $color-grey1;
+
+    @include mq(medium) {
+      padding: calc(12 / 16 * 1rem) calc(18 / 16 * 1rem);
+    }
+  }
+}

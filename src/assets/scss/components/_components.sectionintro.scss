@@ -1,0 +1,24 @@
+// ===================================
+// intros
+// ===================================
+
+.c-sectionintro {
+  font-weight: 400;
+  margin-bottom: calc(72 / 16 * 1rem);
+  font-size: calc(18 / 16 * 1rem);
+  line-height: calc(24 / 18);
+  color: $color-grey3;
+
+  @include mq(medium) {
+    font-size: calc(20 / 16 * 1rem);
+    line-height: calc(30 / 20);
+    margin-right: 25%;
+  }
+
+  @include mq(large) {
+    font-weight: 300;
+    font-size: calc(24 / 16 * 1rem);
+    line-height: calc(36 / 24);
+    margin-right: 40%;
+  }
+}

@@ -1,0 +1,38 @@
+// ===================================
+// Site header
+// ===================================
+
+.c-siteheader {
+  padding-top: calc(60 / 16 * 1rem);
+  padding-bottom: calc(60 / 16 * 1rem);
+
+  @include mq(large) {
+    padding-top: calc(120 / 16 * 1rem);
+    padding-bottom: calc(120 / 16 * 1rem);
+  }
+}
+
+.c-siteheader > .l-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  @include mq(medium) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.c-siteheader__brand {
+  max-width: 448px;
+  flex: 0 1 auto;
+}
+
+.c-siteheader__links {
+  flex: 0 1 auto;
+
+  @include mq(medium) {
+    margin-left: auto;
+  }
+}

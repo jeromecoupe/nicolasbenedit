@@ -1,9 +1,10 @@
 {
   "name": "nicolas-benedit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "website for Nicolas Benedit",
   "browserslist": [
-    "last 2 versions"
+    "last 2 versions",
+    "not IE"
   ],
   "repository": {
     "type": "git",
@@ -14,17 +15,30 @@
   "bugs": {
     "url": "https://github.com/jeromecoupe/nicolasbenedit/issues"
   },
-  "homepage": "https://github.com/jeromecoupe/nicolasbenedit#readme",
+  "scripts": {
+    "clean": "rimraf './dist'",
+    "styles:prod": "sass --no-source-map --style=compressed src/assets/scss/main.scss dist/assets/css/main.css",
+    "styles:dev": "sass --source-map --embed-source-map --source-map-urls=absolute ./src/assets/scss/main.scss dist/assets/css/main.css",
+    "poststyles:prod": "postcss dist/assets/css/main.css --replace --no-map --use autoprefixer cssnano",
+    "server": "browser-sync start --server \"dist\" --files \"dist\" --no-open",
+    "eleventy": "npx eleventy --quiet",
+    "watch:eleventy": "npx eleventy --watch --quiet",
+    "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
+    "build": "npm-run-all clean --parallel styles:prod eleventy",
+    "watch": "npm-run-all --parallel server watch:*",
+    "dev": "npm run watch"
+  },
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "browser-sync": "^2.26.3",
-    "cssnano": "^4.1.10",
-    "del": "^4.0.0",
-    "gulp": "^4.0.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.27.4",
+    "cssnano": "^5.0.6",
+    "moment": "^2.29.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.35.1"
   }
 }
