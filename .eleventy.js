@@ -1,8 +1,10 @@
+const dateYear = require("./src/_11ty/filters/dates.js").dateYear;
+
 module.exports = function (eleventyConfig) {
   // collections
 
   // filters
-  eleventyConfig.addFilter("date", require("./src/_11ty/filters/date.js"));
+  eleventyConfig.addFilter("dateYear", dateYear);
 
   // deep merge
   eleventyConfig.setDataDeepMerge(true);
