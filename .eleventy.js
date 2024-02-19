@@ -6,14 +6,17 @@ module.exports = function (eleventyConfig) {
   // filters
   eleventyConfig.addFilter("dateYear", dateYear);
 
-  // deep merge
-  eleventyConfig.setDataDeepMerge(true);
-
   // pass through
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("./src/assets/img");
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
+
+  // server config
+  eleventyConfig.setServerOptions({
+    watch: ["./dist/assets/css/**/*.css", "./dist/assets/js/**/*.js"],
+    port: 3000,
+  });
 
   // base config
   return {

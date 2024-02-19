@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "website for Nicolas Benedit",
   "browserslist": [
-    "last 2 versions",
-    "not IE <= 11"
+    "> 0.5%",
+    "not dead"
   ],
   "repository": {
     "type": "git",
@@ -20,26 +20,25 @@
     "styles:prod": "sass --no-source-map --style=compressed src/assets/scss/main.scss dist/assets/css/main.css",
     "styles:dev": "sass --source-map --embed-source-map --source-map-urls=absolute ./src/assets/scss/main.scss dist/assets/css/main.css",
     "poststyles:prod": "postcss dist/assets/css/main.css --replace --no-map --use autoprefixer cssnano",
-    "server": "browser-sync start --server \"dist\" --files \"dist\" --no-open",
-    "eleventy": "npx eleventy --quiet",
-    "watch:eleventy": "npx eleventy --watch --quiet",
+    "server": "npx @11ty/eleventy --serve",
+    "eleventy": "npx @11ty/eleventy --quiet",
+    "watch:eleventy": "npx @11ty/eleventy --watch --quiet",
     "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
     "build": "npm-run-all clean --parallel styles:prod eleventy",
     "watch": "npm-run-all --parallel server watch:*",
     "dev": "npm run watch"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "autoprefixer": "^10.4.8",
-    "browser-sync": "^2.27.10",
-    "cssnano": "^5.1.13",
-    "luxon": "^3.0.1",
-    "moment": "^2.29.4",
-    "npm-run-all": "^4.1.5",
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "luxon": "^3.4.4",
+    "moment": "^2.30.1",
+    "npm-run-all2": "^6.1.2",
     "onchange": "^7.1.0",
-    "postcss": "^8.4.16",
-    "postcss-cli": "^10.0.0",
-    "rimraf": "^3.0.2",
-    "sass": "^1.54.5"
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "rimraf": "^5.0.5",
+    "sass": "^1.71.0"
   }
 }
